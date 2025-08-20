@@ -1,27 +1,23 @@
 /* your code here */
-.media-icons ul{
+.media-icons{
 	display: flex;
-	list-style: none;
+	gap: 15px;
 }
 
-.media-icons ul li{
-	margin-left: 15px
-}
-
-.media-icons ul li a{
+.media-icons a {
 	display: inline-block;
 	width: 40px;
 	height: 40px;
-	background-color: #333;
 	color: white;
-	border-radius: 50%;
+	background-color: #333;
+	border-radius: 50px;
 	text-align: center;
 	line-height: 40px;
 	font-size: 18px;
 	transition: background-color 0.3s ease;
 }
 
-.media-icons ul li a:hover {
+.media-icons a:hover {
   background-color: #f43851;
 }
 
@@ -68,7 +64,7 @@ footer {
 
 .link-boxes .box .link_name {
 	font-weight: 600;
-	font-size: 18px;
+	font-size: 21px;
 	margin-bottom: 15px;
 	cursor: default;
 }
@@ -105,4 +101,26 @@ footer {
 .bottom_text {
 	display: flex;
 	justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .media-icons ul li {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .link-boxes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bottom-details {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
