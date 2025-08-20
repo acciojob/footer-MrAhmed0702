@@ -1,1 +1,108 @@
 /* your code here */
+.media-icons ul{
+	display: flex;
+	list-style: none;
+}
+
+.media-icons ul li{
+	margin-left: 15px
+}
+
+.media-icons ul li a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-color: #333;
+	color: white;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	transition: background-color 0.3s ease;
+}
+
+.media-icons ul li a:hover {
+  background-color: #f43851;
+}
+
+.logo-details .logo_name {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px 20px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.link-boxes {
+	display: flex;
+	justify-content: space-between;
+}
+
+.link-boxes ul {
+	list-style: none;
+	min-width: 150px;
+}
+
+.link-boxes .box .link_name {
+	font-weight: 600;
+	font-size: 18px;
+	margin-bottom: 15px;
+	cursor: default;
+}
+
+.link-boxes .box li{
+	margin-bottom: 10px;
+	font-size: 15px;
+	color: #b5b5b5;
+}
+
+.link-boxes .box li a{
+	color: #b5b5b5;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.link-boxes .box li a:hover {
+	color: white
+}
+
+.bottom-details {
+	background: #2f3640;
+	padding: 15px 20px;
+	margin-top: 30px;
+	text-align: center;
+	color: #b5b5b5;
+	font-size: 14px;
+}
+
+.bottom-details .privacy_policy {
+  cursor: pointer;
+}
+
+.bottom_text {
+	display: flex;
+	justify-content: space-between;
+}
